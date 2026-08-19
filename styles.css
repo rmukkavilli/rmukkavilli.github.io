@@ -181,6 +181,12 @@ body {
     font-weight: 700;
 }
 
+.project-status.completed {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
