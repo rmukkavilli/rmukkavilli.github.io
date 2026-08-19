@@ -313,4 +313,11 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+    .check {
+        width: 18px;
+        height: 50px;
+        border-bottom: 5px solid green; /* lower arm */
+        border-right: 5px solid green; /* upper arm */
+        transform: rotate(45deg); /* angle to form tick */
+    }
 }
