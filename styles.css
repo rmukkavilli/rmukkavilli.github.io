@@ -320,3 +320,9 @@ footer {
         align-items: flex-start;
     }
 }
+
+.project-status.completed::before {
+    content: "✓";
+    margin-right: 5px;
+    font-weight: 800;
+}
