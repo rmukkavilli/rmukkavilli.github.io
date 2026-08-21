@@ -218,6 +218,38 @@ body {
     margin: 1rem 0;
     border: 1px solid #e2e2e2;
     display: block;
+    cursor: zoom-in;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.project-screenshot:hover {
+    opacity: 0.92;
+    transform: scale(1.01);
+}
+
+/* ---------- Lightbox ---------- */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: zoom-out;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 95vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 
