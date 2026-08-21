@@ -3,489 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ravi Mukkavilli | Backend Software Engineer</title>
-
     <meta
         name="description"
-        content="Backend Software Engineer portfolio focused on Python, Java, APIs, distributed systems, databases, reliability, and cloud engineering."
+        content="Resume of Ravi Ramesh Mukkavilli — Software Engineer specializing in backend APIs, test infrastructure, developer tooling, and healthcare systems."
     >
-
+    <title>Ravi Mukkavilli | Resume</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .resume-header h1 {
+            margin-bottom: 8px;
+        }
+
+        .resume-title {
+            margin: 0 0 12px;
+            color: #374151;
+            font-size: 1.15rem;
+        }
+
+        .resume-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            margin-top: 12px;
+        }
+
+        .resume-contact a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        .resume-contact a:hover,
+        .resume-links a:hover {
+            text-decoration: underline;
+        }
+
+        .resume-job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 20px;
+        }
+
+        .resume-job-header h3 {
+            margin-bottom: 4px;
+        }
+
+        .resume-date {
+            color: #6b7280;
+            white-space: nowrap;
+        }
+
+        .resume-role {
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        .resume-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin: 8px 0 12px;
+        }
+
+        .resume-links a {
+            color: #4f46e5;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .resume-skills p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 700px) {
+            .resume-job-header {
+                display: block;
+            }
+
+            .resume-date {
+                display: block;
+                margin-bottom: 4px;
+            }
+        }
+
+        @media print {
+            .navbar {
+                display: none;
+            }
+
+            .resume-page {
+                padding-top: 0;
+            }
+
+            a {
+                color: inherit !important;
+                text-decoration: none !important;
+            }
+
+            .resume-job,
+            .resume-section {
+                break-inside: avoid;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="container nav-content">
-            <div class="logo">Ravi Mukkavilli</div>
+            <div class="logo">
+                <a href="index.html">Ravi Mukkavilli</a>
+            </div>
 
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="Resume.html">Resume</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="Resume.html" aria-current="page">Resume</a>
+                <a href="index.html#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-
-    <!-- Hero -->
-    <header class="hero">
+    <main class="resume-page">
         <div class="container">
-
-            <p class="eyebrow">BACKEND SOFTWARE ENGINEERING</p>
-
-            <h1>
-                Building reliable APIs,
-                backend systems,
-                and engineering infrastructure.
-            </h1>
-
-            <p class="hero-text">
-                Software engineer with experience in Python, Java,
-                API integrations, distributed systems, CI/CD,
-                debugging, and software reliability.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a
-                    class="button primary"
-                    href="https://github.com/rmukkavilli"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View GitHub
-                </a>
-
-                <a class="button secondary"
-                        href="Resume.html">
-                        View Resume
-                </a>
-
-                <a
-                    class="button secondary"
-                    href="#projects"
-                >
-                    View Projects
-                </a>
-
-            </div>
-
-        </div>
-    </header>
-
-
-    <main>
-
-        <!-- About -->
-        <section id="about" class="section">
-            <div class="container">
-
-                <p class="section-label">ABOUT</p>
-                <h2>Engineering background</h2>
-
-                <p class="section-intro">
-                    My experience spans software development,
-                    test infrastructure, backend/API integration,
-                    distributed systems, and engineering productivity.
-                    I am currently focused on building production-style
-                    backend systems using Python and modern backend
-                    engineering practices.
-                </p>
-
-                <p>
-                    My work has involved developing reusable software
-                    components, integrating APIs and backend services,
-                    troubleshooting complex distributed-system failures,
-                    improving CI/CD workflows, and designing automation
-                    that improves engineering efficiency and reliability.
-                </p>
-
-            </div>
-        </section>
-
-
-        <!-- Projects -->
-        <section id="projects" class="section alternate">
-            <div class="container">
-
-                <p class="section-label">PROJECTS</p>
-                <h2>Backend engineering projects</h2>
-
-                <div class="project-grid">
-
-                    <article class="project-card">
-
-                        <div class="project-status completed">
-                            LIVE / COMPLETED
-                        </div>
-
-                        <h3>Clinical Screening Workflow API</h3>
-
-                        <p>
-                            Production-deployed REST API for managing
-                            patients and clinical screening workflows,
-                            backed by PostgreSQL on Render.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>PostgreSQL</span>
-                            <span>SQLAlchemy</span>
-                            <span>Alembic</span>
-                            <span>PyTest</span>
-                            <span>GitHub Actions</span>
-                            <span>Docker</span>
-                            <span>Render</span>
-                        </div>
-
-                        <p class="project-goal">
-                           Implemented relational data models, database
-                           migrations, validation, filtering, screening-status
-                           updates, health checks, 21 automated tests, and
-                           multi-version CI with GitHub Actions.
-                        </p>
-
-                        <p class="project-goal">
-                            <a
-                                href="https://github.com/rmukkavilli/clinical-screening-api"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub Repository
-                            </a>
-                            &middot;
-                            <a
-                                href="https://backend-project-api-cswq.onrender.com/docs"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live API Docs
-                            </a>
-                            &middot;
-                            <a
-                                href="https://github.com/rmukkavilli/clinical-screening-api/actions"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View CI Runs
-                            </a>
-                        </p>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-status completed">
-                            COMPLETED
-                        </div>
-
-                        <h3>Agentic API Reliability Checker</h3>
-
-                        <p>
-                            Read-only AI agent that orchestrates API inspection
-                            tools and produces evidence-based reliability reports
-                            for health and core business endpoints.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>OpenAI Agents SDK</span>
-                            <span>Gemini</span>
-                            <span>HTTPX</span>
-                            <span>AsyncIO</span>
-                            <span>Tool Calling</span>
-                            <span>API Contract Validation</span>
-                        </div>
-
-                        <p class="project-goal">
-                            Implemented asynchronous, read-only checks for health,
-                            patient, and screening endpoints with HTTP-status,
-                            JSON-shape, and record-count validation. The agent must
-                            call every registered tool, report only verified
-                            evidence, and avoid destructive requests.
-                        </p>
-
-                        <img
-                            src="assets/reliability-check-run.png"
-                            alt="GitHub Actions log showing the API Reliability Agent's report: health, screening, and patient endpoints all passing with HTTP 200 responses"
-                            class="project-screenshot"
-                            loading="lazy"
-                        >
-
-                        <p class="project-goal">
-                            <a
-                                href="https://github.com/rmukkavilli/api-reliability-agent"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub Repository
-                            </a>
-                            &middot;
-                            <a
-                                href="https://github.com/rmukkavilli/api-reliability-agent/actions/workflows/demo.yaml"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Run Live Demo
-                            </a>
-                            &middot;
-                            <a
-                                href="https://github.com/rmukkavilli/api-reliability-agent#run-the-demo"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Setup Instructions
-                            </a>
-                            &middot;
-                            <a
-                                href="https://backend-project-api-cswq.onrender.com/docs"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Target API Docs
-                            </a>
-                        </p>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                      <div class="project-status completed">
-                         COMPLETED
-                      </div>
-
-                        <h3>FHIR API Client &amp; Test Automation Framework</h3>
-
-                        <p>
-                            Reusable Python and PyTest framework for authenticated
-                            FHIR REST API integration testing with isolated
-                            test-data lifecycle management.
-                        </p>
-
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>FHIR</span>
-                            <span>REST</span>
-                            <span>Authentication</span>
-                            <span>PyTest</span>
-                            <span>GitHub Actions</span>
-                        </div>
-
-                        <p class="project-goal">
-                            Implemented configurable environments, bearer-token
-                            authentication, request timeouts, dependency injection,
-                            Patient create/read/search/delete workflows, unique
-                            per-run test data, automatic cleanup, and CI validation.
-                        </p>
-
-                        <p class="project-goal">
-                            <a
-                                href="https://github.com/rmukkavilli/rmukkavilli/tree/main/pytest-fhir"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub Repository
-                            </a>
-
-                            &middot;
-
-                            <a
-                                href="https://github.com/rmukkavilli/rmukkavilli/actions/workflows/workflow.yaml"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View FHIR CI Runs
-                            </a>
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Experience -->
-        <section id="experience" class="section">
-            <div class="container">
-
-                <p class="section-label">EXPERIENCE</p>
-                <h2>Engineering experience</h2>
-
-                <div class="experience-item">
-
-                    <h3>Verily Life Sciences</h3>
-                    <p class="role">
-                        Software Engineering, APIs & Test Infrastructure
-                    </p>
-
-                    <p>
-                        Built Python-based API and integration
-                        infrastructure, automated distributed healthcare
-                        workflows, improved CI/CD feedback, and
-                        investigated complex failures across application,
-                        backend, cloud, device, and external-service layers.
-                    </p>
-
-                </div>
-
-
-                <div class="experience-item">
-
-                    <h3>Google Play Books</h3>
-                    <p class="role">
-                        Software Engineering in Test & Engineering Infrastructure
-                    </p>
-
-                    <p>
-                        Developed reusable Java automation and engineering
-                        infrastructure, modernized Android frameworks,
-                        supported backend integrations, and improved
-                        release engineering workflows.
-                    </p>
-
-                </div>
-
-
-                <div class="experience-item">
-
-                    <h3>Earlier Software Engineering</h3>
-                    <p class="role">
-                        Java Web & Backend Development
-                    </p>
-
-                    <p>
-                        Developed Java web applications, backend services,
-                        database-backed functionality, automation tools,
-                        and production-support solutions.
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Skills -->
-        <section id="skills" class="section alternate">
-            <div class="container">
-
-                <p class="section-label">SKILLS</p>
-                <h2>Technical focus</h2>
-
-                <div class="skills-grid">
-
-                    <div class="skill-group">
-                        <h3>Languages</h3>
-                        <p>Python</p>
-                        <p>Java</p>
-                        <p>TypeScript</p>
-                        <p>JavaScript</p>
-                        <p>SQL</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3>Backend &amp; Databases</h3>
-
-                        <p>FastAPI</p>
-                        <p>REST APIs</p>
-                        <p>API Integration</p>
-                        <p>Authentication</p>
-                        <p>Service Integration</p>
-                        <p>Distributed Systems</p>
-                        <p>PostgreSQL</p>
-                        <p>SQLite</p>
-                        <p>SQLAlchemy</p>
-                        <p>Alembic</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3>Engineering</h3>
-                        <p>Object-Oriented Design</p>
-                        <p>Data Structures</p>
-                        <p>Algorithms</p>
-                        <p>Debugging</p>
-                        <p>Root Cause Analysis</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h3>Infrastructure</h3>
-
-                        <p>Docker</p>
-                        <p>GitHub Actions</p>
-                        <p>Jenkins</p>
-                        <p>Git</p>
-                        <p>Linux</p>
-                        <p>CI/CD</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Contact -->
-        <section id="contact" class="section contact-section">
-            <div class="container">
-
-                <p class="section-label">CONTACT</p>
-
-                <h2>Let's connect</h2>
-
-                <p>
-                    I'm interested in backend software engineering,
-                    developer infrastructure, distributed systems,
-                    and API-focused engineering opportunities.
-                </p>
-
-                <div class="contact-links">
-
-                    <a
-                        href="https://github.com/rmukkavilli"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                    <!-- Replace this with your LinkedIn URL -->
+            <header class="resume-header">
+                <h1>Ravi Ramesh Mukkavilli</h1>
+                <h2 class="resume-title">
+                    Software Engineer | Backend APIs, Test Infrastructure &amp; Developer Tooling
+                </h2>
+                <p>San Francisco Bay Area, California</p>
+
+                <div class="resume-contact">
+                    <a href="mailto:ravirameshm@gmail.com">ravirameshm@gmail.com</a>
+                    <a href="https://github.com/rmukkavilli" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a
                         href="https://www.linkedin.com/in/ravi-ramesh-mukkavilli-1392806a/"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                    <!-- Replace this with your email -->
-                    <a href="mailto:ravirameshm@gmail.com">Email</a>
-
+                    >LinkedIn</a>
                 </div>
+            </header>
 
-            </div>
-        </section>
+            <section class="resume-section">
+                <h2>Professional Summary</h2>
+                <p>
+                    Software engineer specializing in Python-based backend APIs, test infrastructure,
+                    developer tooling, distributed healthcare integrations, and software reliability.
+                    Experienced in designing reusable automation and integration frameworks, building
+                    CI/CD workflows, debugging complex systems, and delivering regulated healthcare
+                    software in collaboration with engineering, product, clinical, quality, and
+                    regulatory teams.
+                </p>
+            </section>
 
-    </main>
+            <section class="resume-section resume-skills">
+                <h2>Technical Skills</h2>
+                <p><strong>Languages:</strong> Python, Java, TypeScript, JavaScript, SQL, Bash</p>
+                <p>
+                    <strong>Backend &amp; Data:</strong> FastAPI, REST APIs, FHIR APIs, PostgreSQL,
+                    SQLite, SQLAlchemy, Alembic, Authentication, API Integration, Service Integration
+                </p>
+                <p>
+                    <strong>Test Infrastructure:</strong> PyTest, Selenium, Cypress, Espresso,
+                    UiAutomator, TestNG, Postman, Risk-Based Testing
+                </p>
+                <p>
+                    <strong>Infrastructure &amp; Tooling:</strong> Docker, GitHub Actions, Jenkins,
+                    Git, Linux, CI/CD, GCP
+                </p>
+                <p>
+                    <strong>Healthcare &amp; Quality:</strong> FHIR, Redox, DICOM, FDA 510(k),
+                    IEC 62304, ISO 13485, ISO 14971, Verification &amp; Validation
+                </p>
+            </section>
 
+            <section class="resume-section">
+                <h2>Selected Engineering Projects</h2>
 
-    <footer>
-        <div class="container">
-            <p>
-                © 2026 Ravi Mukkavilli
-            </p>
+                <article class="resume-job">
+                    <div class="resume-job-header">
+                        <h3>Clinical Screening Workflow API</h3>
+                        <span class="resume-date">Completed</span>
+                    </div>
+                    <p class="resume-role">FastAPI • PostgreSQL • SQLAlchemy • Alembic • Docker • PyTest</p>
+                    <div class="resume-links">
+                        <a
+                            href="https://github.com/rmukkavilli/clinical-screening-api"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Repository</a>
+                        <a
+                            href="https://backend-project-api-cswq.onrender.com/docs"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Live API Documentation</a>
+                        <a
+                          git@github.com:rmukkavilli/api-reliability-agent.git  href="https://github.com/rmukkavilli/clinical-screening-api/actions"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >CI Runs</a>
+                    </div>
+                    <ul>
+                        <li>
+                            Built and deployed a FastAPI service for patient and clinical-screening
+                            workflows using Pydantic validation, SQLAlchemy, and PostgreSQL.
+                        </li>
+                        <li>
+                            Added Alembic database migrations, Docker configuration, automated tests,
+                            GitHub Actions CI, and interactive OpenAPI documentation.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="resume-job">
+                    <div class="resume-job-header">
+                        <h3>FHIR API Client &amp; Test Automation Framework</h3>
+                        <span class="resume-date">Completed</span>
+                    </div>
+                    <p class="resume-role">Python • FHIR REST APIs • PyTest • Authentication • GitHub Actions</p>
+                    <div class="resume-links">
+                        <a
+                            href="https://github.com/rmukkavilli/rmukkavilli/tree/main/pytest-fhir"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Repository</a>
+                        <a
+                            href="https://github.com/rmukkavilli/rmukkavilli/actions/workflows/workflow.yaml"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >CI Workflow</a>
+                    </div>
+                    <ul>
+                        <li>
+                            Designed a reusable FHIR API client with session management, environment-based
+                            configuration, authentication support, and dependency injection.
+                        </li>
+                        <li>
+                            Stabilized CI by creating isolated patient data for each run and guaranteeing
+                            cleanup, eliminating dependence on unreliable shared test records.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="resume-section">
+                <h2>Professional Experience</h2>
+
+                <article class="resume-job">
+                    <div class="resume-job-header">
+                        <h3>Verily Life Sciences</h3>
+                        <span class="resume-date">Jun 2022 – Jun 2026</span>
+                    </div>
+                    <p class="resume-role">Software Test Engineer / Senior SDET</p>
+                    <ul>
+                        <li>
+                            Built Python and PyTest integration infrastructure for FHIR APIs, clinical
+                            screening services, device workflows, and third-party healthcare integrations,
+                            reducing release certification from approximately three days to one day.
+                        </li>
+                        <li>
+                            Led risk-based verification and validation for regulated healthcare systems
+                            supporting more than 6,000 clinical screenings, with traceability and release
+                            evidence aligned to FDA and medical-device quality requirements.
+                        </li>
+                        <li>
+                            Integrated automated workflows with GitHub Actions and established scheduled
+                            integration testing that detected configuration and endpoint regressions before release.
+                        </li>
+                        <li>
+                            Reduced automation flakiness from approximately 22% to 5% through failure
+                            classification, quarantine controls, root-cause analysis, and permanent regression fixes.
+                        </li>
+                        <li>
+                            Collaborated across engineering, product, clinical, quality, regulatory, and
+                            security teams on technical design, system risk, release readiness, and production issues.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="resume-job">
+                    <div class="resume-job-header">
+                        <h3>Google Play Books</h3>
+                        <span class="resume-date">2017 – 2022</span>
+                    </div>
+                    <p class="resume-role">Software Engineer in Test — eTouch / Virtusa</p>
+                    <ul>
+                        <li>
+                            Developed Java-based automation and engineering infrastructure for Android,
+                            web, backend integrations, device configuration, and connectivity workflows.
+                        </li>
+                        <li>
+                            Modernized Android automation from UiAutomator to Espresso and introduced
+                            synchronization patterns that improved test reliability.
+                        </li>
+                        <li>
+                            Reduced release verification from approximately six hours to one hour through
+                            CI automation, device coverage, reusable tooling, and targeted regression suites.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="resume-job">
+                    <div class="resume-job-header">
+                        <h3>Tech Mahindra</h3>
+                        <span class="resume-date">2006 – 2017</span>
+                    </div>
+                    <p class="resume-role">Test Lead / Senior Automation Engineer</p>
+                    <ul>
+                        <li>
+                            Led automation and verification activities for enterprise web, API, mobile,
+                            and database-backed systems using Java, Selenium, TestNG, and SQL.
+                        </li>
+                        <li>
+                            Designed reusable test utilities, supported releases and production issues,
+                            mentored engineers, and coordinated delivery across distributed teams.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="resume-job">
+                    <div class="resume-job-header">
+                        <h3>Wipro Technologies &amp; Infinite Computer Solutions</h3>
+                        <span class="resume-date">2004 – 2006</span>
+                    </div>
+                    <p class="resume-role">Software Engineer</p>
+                    <ul>
+                        <li>
+                            Developed and maintained Java web applications, backend services,
+                            database-backed functionality, engineering utilities, and production-support solutions.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="resume-section">
+                <h2>Education</h2>
+                <p>
+                    <strong>Bachelor of Engineering — Computer Science</strong><br>
+                    Bharathidasan University, India
+                </p>
+            </section>
         </div>
-    </footer>
-
+    </main>
 </body>
 </html>
