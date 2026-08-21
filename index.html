@@ -218,6 +218,7 @@
                             alt="GitHub Actions log showing the API Reliability Agent's report: health, screening, and patient endpoints all passing with HTTP 200 responses"
                             class="project-screenshot"
                             loading="lazy"
+                            onclick="openLightbox(this.src, this.alt)"
                         >
 
                         <p class="project-goal">
@@ -486,6 +487,29 @@
             </p>
         </div>
     </footer>
+
+    <!-- Lightbox for project screenshots -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            img.alt = alt;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
 
 </body>
 </html>
